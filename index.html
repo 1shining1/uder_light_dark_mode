@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" id="mystylesheet" href="css/light.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <h2>light / dark mode</h2>
+        <p>let's try it</p>
+        <div class="btn_wrap">
+            <button class="btn_light" onclick="swapStyle('css/light.css')">Light Mode</button>
+            <button class="btn_dark" onclick="swapStyle('css/dark.css')">Dark Mode</button>
+        </div>
+    </div>
+   
+
+    <script>
+
+        // for Local Storage (keep the mode even user reload the page)
+        var setTheme = localStorage.getItem('theme')
+        console.log('theme :', setTheme)
+
+        if (setTheme == null){
+            swapStyle('css/light.css')
+        }else{
+            swapStyle(setTheme)
+        }
+
+
+
+
+        // Change css href 
+        function swapStyle(sheet) {
+            document.getElementById('mystylesheet').href = sheet
+            localStorage.setItem('theme', sheet)
+        }
+    </script>
+</body>
+</html>

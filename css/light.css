@@ -1,0 +1,37 @@
+body{
+	background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: black;
+}
+
+p, span, small{
+	color: #888;
+}
+
+#box{
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+	border: 2px solid #e7e7e7;
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px;
+	background-color: #F8F8F8!important;
+}
+
+button {
+    padding:5px 15px;
+    border: 1px solid #ccc;
+}
+
+.btn_light {
+    background-color:#f8f8f8;
+    color: #222;
+}
+
+.btn_dark {
+    background-color:#333;
+    color: #eee;
+}
